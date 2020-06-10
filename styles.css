@@ -1,0 +1,144 @@
+:root {
+  --cyan: hsl(179, 62%, 43%);
+  --bright-yellow: hsl(71, 73%, 54%);
+  --light-gray: hsl(204, 43%, 93%);
+  --grayish-blue: hsl(218, 22%, 67%);
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Karla");
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+  background: var(--light-gray);
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  height: 100%;
+}
+main {
+  height: 100%;
+  display: flex;
+}
+
+.contenedor {
+  margin: auto;
+  max-width: 600px;
+  background: white;
+  border-radius: .4rem;
+  box-shadow: 0px 5px 20px -10px #464646;
+}
+
+.topContainer {
+  padding: 2rem;
+}
+
+.botContainer {
+  display: flex;
+  flex-direction: row;
+  border-radius: .4rem;
+}
+
+.priceContainer {
+    color: var(--light-gray);
+    padding: 2rem;
+    width: 50%;
+    background: var(--cyan);
+    border-radius: 0 0 0 .4rem;
+    font-size: 15px;
+}
+.aboutContainer {
+  padding: 2rem;
+  width: 50%;
+  background: rgb(69, 199, 199);
+  color: var(--light-gray);
+  font-weight: lighter;
+  font-size: 14px;
+  border-radius: 0 0 .4rem 0;
+}
+
+.titleText {
+  font-weight: 700;
+  color: var(--light-gray);
+  font-size: 16px;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+.btnSign{
+    text-align: center;
+    font-weight: 700;
+    background: var(--bright-yellow);
+    color: var(--light-gray);
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 1.5rem;
+    border-radius: .4rem;
+    box-shadow: 0px 5px 20px -10px #464646;
+}
+
+.tittleJoin{
+    font-size: 19px;
+    font-weight: 700;
+    color: var(--cyan);
+    margin-bottom: 10px;
+}
+
+.textDay{
+    color: var(--bright-yellow);
+    margin-top: 1rem;
+    margin-bottom: .8rem;
+    font-weight: bolder;
+}
+
+.topContainer p {
+    color: rgb(172, 172, 172);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.priceContainer .dollar{
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+
+.priceText{
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    vertical-align: middle;
+    display: flex;
+}
+
+.aboutContainer li{
+  display: inline-block;
+  padding-top: 4px;
+  font-weight: lighter;
+  
+}
+
+
+@media only screen and (max-width: 375px){
+
+  .botContainer{
+    flex-direction: column;
+  }
+  .contenedor{
+    max-width: 90%;
+  }
+  .priceContainer{
+    width: 100%;
+  }
+  .aboutContainer{
+    width: 100%;
+  }
+
+}
